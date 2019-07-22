@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E1012FD522E5CDCF00FE2392 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E1012FD522E5CDCF00FE2392 /* README_.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_.md; sourceTree = "<group>"; };
 		E1A2319622E4A706005476B9 /* ShoutOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut.xcdatamodel; sourceTree = "<group>"; };
 		E1A2319B22E4A7CA005476B9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F2530B631D985E400029B14E /* ShoutOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoutOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +68,7 @@
 		F2530B5A1D985E400029B14E = {
 			isa = PBXGroup;
 			children = (
-				E1012FD522E5CDCF00FE2392 /* README.md */,
+				E1012FD522E5CDCF00FE2392 /* README_.md */,
 				F2530B651D985E400029B14E /* ShoutOut */,
 				F2530B7A1D985E410029B14E /* ShoutOutTests */,
 				F2530B641D985E400029B14E /* Products */,
