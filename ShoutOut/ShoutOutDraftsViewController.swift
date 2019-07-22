@@ -3,12 +3,14 @@
 //  ShoutOut
 
 import UIKit
+import CoreData
 
 class ShoutOutDraftsViewController: UIViewController,
 									UITableViewDataSource,
 									UITableViewDelegate {
 
 	@IBOutlet weak var tableView: UITableView!
+    var managedObjectContext: NSManagedObjectContext!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
