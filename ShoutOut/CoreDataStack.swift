@@ -19,6 +19,10 @@ func createMainContext() -> NSManagedObjectContext {
     let psc = NSPersistentStoreCoordinator(managedObjectModel: model)
     
     let storeURL = URL.documentsURL.appendingPathComponent("ShoutOut.sqlite")
+    
+    // TODO: Remove the removeItem.. this is temporary .. should use migration instead
+    try! FileManager.default.removeItem(at: storeURL)
+    
     try! psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
     
     //' Create and return NSManagedObjectContext
@@ -34,4 +38,8 @@ extension URL {
             .default
             .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     }
+}
+
+protocol ManagedObjectContextDependentType {
+    var managedObjectContext: NSManagedObjectContext! { get set}
 }
