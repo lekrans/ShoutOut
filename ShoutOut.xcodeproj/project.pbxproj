@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E1A2319722E4A706005476B9 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1A2319522E4A706005476B9 /* ShoutOut.xcdatamodeld */; };
 		E1A2319C22E4A7CA005476B9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2319B22E4A7CA005476B9 /* CoreDataStack.swift */; };
+		E1F0A2C522FBEFC50094DB90 /* ShoutOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A2C422FBEFC50094DB90 /* ShoutOut.swift */; };
+		E1F0A2C722FBF8F00094DB90 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A2C622FBF8F00094DB90 /* Employee.swift */; };
 		F2530B671D985E400029B14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2530B661D985E400029B14E /* AppDelegate.swift */; };
 		F2530B6C1D985E400029B14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2530B6A1D985E400029B14E /* Main.storyboard */; };
 		F2530B6E1D985E400029B14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2530B6D1D985E400029B14E /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		E1012FD522E5CDCF00FE2392 /* README_.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_.md; sourceTree = "<group>"; };
 		E1A2319622E4A706005476B9 /* ShoutOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut.xcdatamodel; sourceTree = "<group>"; };
 		E1A2319B22E4A7CA005476B9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E1F0A2C422FBEFC50094DB90 /* ShoutOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOut.swift; sourceTree = "<group>"; };
+		E1F0A2C622FBF8F00094DB90 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		F2530B631D985E400029B14E /* ShoutOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoutOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2530B661D985E400029B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2530B6B1D985E400029B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				E1A2319522E4A706005476B9 /* ShoutOut.xcdatamodeld */,
+				E1F0A2C422FBEFC50094DB90 /* ShoutOut.swift */,
+				E1F0A2C622FBF8F00094DB90 /* Employee.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -240,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A2319722E4A706005476B9 /* ShoutOut.xcdatamodeld in Sources */,
+				E1F0A2C722FBF8F00094DB90 /* Employee.swift in Sources */,
 				F2530B8C1D9861E40029B14E /* ShoutOutDetailsViewController.swift in Sources */,
 				F2530B671D985E400029B14E /* AppDelegate.swift in Sources */,
+				E1F0A2C522FBEFC50094DB90 /* ShoutOut.swift in Sources */,
 				E1A2319C22E4A7CA005476B9 /* CoreDataStack.swift in Sources */,
 				F2530B8E1D9861E40029B14E /* ShoutOutEditorViewController.swift in Sources */,
 				F2530B8D1D9861E40029B14E /* ShoutOutDraftsViewController.swift in Sources */,
