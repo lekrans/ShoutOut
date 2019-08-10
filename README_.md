@@ -25,6 +25,7 @@ Three categories that includes the 5 objects (moving parts) that is needed
     * NSPersistentStore // The DataStore.. sqllite, memory and so on 
     
     ## 1) Setting it up
+    *This is done in our CoreDataStack.swift file*
     Step1   Create a NSManagedObjectModel
     Step2   Create the NSPersistentStore and the NSPersistenStoreCoordinator
     Step3   Create the NSManagedObjectContext
@@ -99,8 +100,50 @@ Three categories that includes the 5 objects (moving parts) that is needed
     * Update the ShoutOut.swift (in Model folder) with the relationship
     
     
+    ## SAVING & ACCESSING DATA
+    ### new classes
+    * NSEntityDescription -> Saving Data
+    * NSFetchRequest -> Accessing Data
+    * NSPredicate -> Filtering Data
+    * NSSortDescriptor -> Sorting Data
     
     
+    
+    ### SAVING DATA
+    * First .. to CREATE a new instance of an Entity (like ShoutOut, Employee and so on) we need to use the NSEntityDescription object to INSERT the new object to our context (NSManagedObjectContext)
+    
+   ```
+   let shoutOut = NSEntityDescription.insertNewObject(
+    forEntityName: "ShoutOUt",
+    into: mainContext) as! ShoutOut
+    
+    shoutOut.from = "Micke"
+    
+    do { try mainContext.save() } catch _ {}
+*
+    
+    NOTE the 'as! ShoutOut' at the end of the insertNewObject method call
+    The .insertNewObject method returns an NSManagedObject instance.. but we need to cast it to the SUBCLASS we created in the Model folder
+    
+    See the DataService.swift file (that we created from scratch) to se an implementation of this
+    
+    
+    
+    ### RETRIEVING DATA
+    We use NSFetchRequest to fetch data
+    
+```
+    let shoutOutsFetchRequest = NSFetchRequest<ShoutOut>(
+        entityName: "ShoutOut")
+        do {
+            let shoutOuts = try mainContext.fetch(shoutOutsFetchRequest)
+        } catch {}
+
+    
+```    
+sdf  
+  
+  
     
     
     
