@@ -17,4 +17,5 @@ class ShoutOut: NSManagedObject {
     
     @NSManaged var toEmployee: Employee
     
+    static var entityName: String { return "ShoutOut" }
 }

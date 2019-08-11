@@ -13,5 +13,7 @@ class Employee: NSManagedObject {
     @NSManaged var firstName: String
     @NSManaged var lastName: String
     
-    @NSManaged var shoutOuts: NSSet? // Not an array.. 
+    @NSManaged var shoutOuts: NSSet? // Not an array..
+    
+    static var entityName: String { return "Employee"}
 }

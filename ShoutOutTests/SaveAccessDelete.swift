@@ -38,9 +38,10 @@ class SaveAccessDelete: XCTestCase {
         let dataService = DataService(managedObjectContext: managedObjectContext)
         dataService.seedEmployees()
         
-        let employeeFetchRequest = NSFetchRequest<Employee>(entityName: "Employee")
+        let employeeFetchRequest = NSFetchRequest<Employee>(entityName: Employee.entityName)
         do {
             let employee = try managedObjectContext.fetch(employeeFetchRequest)
+            print("an employee")
             print(employee)
         } catch {print("Something went wrong : \(error)")}
     }
